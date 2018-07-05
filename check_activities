@@ -1,0 +1,3 @@
+ #!/bin/bash
+
+connection_number=`PGOPTIONS='--statement_timeout=0' psql -AqXt -c"SELECT count(*) FROM pg_stat_activity"`
